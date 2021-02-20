@@ -120,6 +120,78 @@ body {
   padding-bottom: 10px;
 }
 
+.awards-container {
+  width: 100%;
+  height: 850px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.awards {
+  width: 100%;
+  height: 770px;
+  display: grid;
+  grid-template-columns: auto 285px 200px 150px;
+  grid-row: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "A B C D" ". E F G" "H I J K" ". L M N";
+}
+
+.awards-a {
+  grid-area: A;
+}
+
+.awards-b {
+  grid-area: B;
+}
+
+.awards-c {
+  grid-area: C;
+}
+
+.awards-d {
+  grid-area: D;
+}
+
+.awards-e {
+  grid-area: E;
+}
+
+.awards-f {
+  grid-area: F;
+}
+
+.awards-g {
+  grid-area: G;
+}
+
+.awards-h {
+  grid-area: H;
+}
+
+.awards-i {
+  grid-area: I;
+}
+
+.awards-j {
+  grid-area: J;
+}
+
+.awards-k {
+  grid-area: K;
+}
+
+.awards-l {
+  grid-area: L;
+}
+
+.awards-m {
+  grid-area: M;
+}
+
+.awards-n {
+  grid-area: N;
+}
+
 .footer {
   display: flex;
   width: 100%;
