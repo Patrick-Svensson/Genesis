@@ -1,0 +1,43 @@
+@use 'font';
+@use 'colours';
+body {
+    width: 85%;
+    height: auto;
+    font-family: font.$main-font;
+    margin: auto;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+.logo-container {
+    width: 60%;
+}
+
+.nav {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+    
+.nav__links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__links--items {
+    text-decoration: none;
+    color: colours.$main-colour;
+}
+
+.nav__links--projects {
+    padding-right: 29px;
+}    
+    
+
+

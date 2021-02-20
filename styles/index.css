@@ -1,0 +1,40 @@
+body {
+  width: 85%;
+  height: auto;
+  font-family: "Mulish", sans-serif;
+  margin: auto;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+}
+
+.logo-container {
+  width: 60%;
+}
+
+.nav {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__links--items {
+  text-decoration: none;
+  color: #111;
+}
+
+.nav__links--projects {
+  padding-right: 29px;
+}
+
+/*# sourceMappingURL=index.css.map */
