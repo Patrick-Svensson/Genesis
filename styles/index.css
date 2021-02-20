@@ -125,15 +125,8 @@ body {
   height: 850px;
   display: flex;
   align-items: flex-end;
-}
-
-.awards {
-  width: 100%;
-  height: 770px;
-  display: grid;
-  grid-template-columns: auto 285px 200px 150px;
-  grid-row: 1fr 1fr 1fr 1fr;
-  grid-template-areas: "A B C D" ". E F G" "H I J K" ". L M N";
+  border-top: 2px solid #D8D8D8;
+  border-bottom: 2px solid #D8D8D8;
 }
 
 .awards-a {
@@ -192,12 +185,56 @@ body {
   grid-area: N;
 }
 
+.awards-line {
+  grid-area: line;
+  background-color: #D8D8D8;
+  width: 100%;
+  height: 2px;
+}
+
+.awards {
+  width: 100%;
+  height: 770px;
+  display: grid;
+  grid-template-columns: auto 285px 200px 150px;
+  grid-row: 1fr 1fr 2px 1fr 1fr;
+  grid-template-areas: "A B C D" ". E F G" "line line line line" "H I J K" ". L M N";
+}
+.awards .awards__heading {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 28px;
+}
+.awards__heading--medium {
+  font-weight: 700d;
+  font-size: 18px;
+  line-height: 23px;
+}
+.awards__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+.awards__text--small {
+  display: block;
+  padding-top: 12px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  mix-blend-mode: normal;
+  opacity: 0.6;
+}
+.awards__text--year {
+  justify-self: flex-end;
+}
+
 .footer {
   display: flex;
   width: 100%;
   height: auto;
   justify-content: space-between;
   align-items: center;
+  margin-top: 40px;
 }
 .footer__logo {
   width: 60%;
