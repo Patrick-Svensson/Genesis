@@ -1,11 +1,11 @@
 body {
-  width: 85%;
+  width: 80%;
   height: auto;
   font-family: "Mulish", sans-serif;
   margin: auto;
 }
 
-.container {
+.nav-container {
   display: flex;
   width: 100%;
 }
@@ -31,6 +31,55 @@ body {
 }
 .nav__links a[href*=projects] {
   padding-right: 29px;
+}
+
+.landing-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.landing-h1 {
+  width: 60%;
+  height: auto;
+}
+.landing-h1__text {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 60px;
+}
+.landing-h1__text--small {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 28px;
+  letter-spacing: -0.423077px;
+  color: #4A4FF2;
+}
+.landing-h1__text--alt-colour {
+  color: #4A4FF2;
+}
+
+.landing-aside {
+  width: 30%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.landing-aside__text {
+  font-weight: 400;
+  font-size: 18px;
+  font-style: italic;
+  line-height: 23px;
+  mix-blend-mode: normal;
+  opacity: 0.6;
+}
+.landing-aside__text::before {
+  content: "";
+  display: block;
+  width: 30px;
+  border-bottom: 2px solid rgba(17, 17, 17, 0.5);
+  margin-bottom: 9px;
 }
 
 .footer {

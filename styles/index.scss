@@ -2,21 +2,83 @@
 @use 'colours';
 @import 'mixin';
 
+// ------ Generic ------
+
 body {
-    width: 85%;
+    width: 80%;
     height: auto;
     font-family: font.$main-font;
     margin: auto;
 }
 
-.container {
+.nav-container {
     @include flex-container;
 }
+
+// ------ Navigation ------
 
 .nav {
     @include nav-bar;
 }
-  
+
+// ------ Header ------
+
+.landing-container {
+    @include flex-container;
+    justify-content: space-between;
+}
+
+.landing-h1 {
+    width: 60%;
+    height: auto;
+
+    &__text {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 60px;
+    }
+
+    &__text--small {
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 28px;
+        letter-spacing: -0.423077px;
+        color: colours.$secondary-colour;
+    }
+    
+    &__text--alt-colour {
+        color: colours.$secondary-colour;
+    }
+
+}
+
+.landing-aside {
+    width: 30%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    &__text {
+        font-weight: 400;
+        font-size: 18px;
+        font-style: italic;
+        line-height: 23px;
+        mix-blend-mode: normal;
+        opacity: 0.6;
+    }
+
+    &__text::before {
+        content: "";
+        display: block;
+        width: 30px;
+        border-bottom: 2px solid rgba(17, 17, 17, .5);
+        margin-bottom: 9px; 
+    }
+}
+
+// ------ Footer ------
+
 .footer {
     @include nav-bar;
     @include footer-nav-bar;
