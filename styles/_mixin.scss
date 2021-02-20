@@ -1,0 +1,37 @@
+@mixin flex-container {
+    display: flex;
+    width: 100%;
+}
+
+@mixin nav-bar {
+    @include flex-container;
+    height: auto;
+    justify-content: space-between;
+    align-items: center;
+
+    &__logo {
+        width: 60%;
+    }
+
+    &__links {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+            
+        & a {
+            text-decoration: none;
+            color: colours.$main-colour;
+        }
+            
+        & a[href*="projects"] {
+            padding-right: 29px;
+        }   
+    }
+}
+
+@mixin footer-nav-bar {
+    .footer-icons {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+}

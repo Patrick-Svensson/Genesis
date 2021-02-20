@@ -10,31 +10,54 @@ body {
   width: 100%;
 }
 
-.logo-container {
-  width: 60%;
-}
-
 .nav {
+  display: flex;
   width: 100%;
   height: auto;
-  display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
+.nav__logo {
+  width: 60%;
+}
 .nav__links {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
-.nav__links--items {
+.nav__links a {
   text-decoration: none;
   color: #111;
 }
-
-.nav__links--projects {
+.nav__links a[href*=projects] {
   padding-right: 29px;
+}
+
+.footer {
+  display: flex;
+  width: 100%;
+  height: auto;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__logo {
+  width: 60%;
+}
+.footer__links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__links a {
+  text-decoration: none;
+  color: #111;
+}
+.footer__links a[href*=projects] {
+  padding-right: 29px;
+}
+.footer .footer-icons {
+  padding-left: 24px;
+  padding-right: 24px;
 }
 
 /*# sourceMappingURL=index.css.map */

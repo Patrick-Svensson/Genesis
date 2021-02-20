@@ -1,5 +1,7 @@
 @use 'font';
 @use 'colours';
+@import 'mixin';
+
 body {
     width: 85%;
     height: auto;
@@ -8,36 +10,14 @@ body {
 }
 
 .container {
-    display: flex;
-    width: 100%;
-}
-
-.logo-container {
-    width: 60%;
+    @include flex-container;
 }
 
 .nav {
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include nav-bar;
 }
-    
-.nav__links {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  
+.footer {
+    @include nav-bar;
+    @include footer-nav-bar;
 }
-
-.nav__links--items {
-    text-decoration: none;
-    color: colours.$main-colour;
-}
-
-.nav__links--projects {
-    padding-right: 29px;
-}    
-    
-
-
