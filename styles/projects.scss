@@ -82,17 +82,27 @@ body {
     }
 }
 
-// ------ Footer ------
+// ------ Images ------
 
 .projects-main-img-container {
     @include flex-container;
-    height: 880px;
+    height: 940px;
     align-items: center;
 }
 
-.projects-main-img {
-    width: 100%;
+.projects-sub-img-container {
+    @include flex-container;
+    justify-content: space-between;
+}
 
+.projects-sub-img {
+    width: 32%;
+    padding-bottom: 20px;
+}
+
+.projects-img {
+    width: 100%;
+    
     &__sub-text {
         font-weight: 400;
         font-size: 16px;
