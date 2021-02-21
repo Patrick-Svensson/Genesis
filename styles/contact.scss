@@ -85,6 +85,18 @@ body {
     
 }
 
+// ------ Map ------
+
+.map-container {
+    @include flex-container;
+    height: 700px;
+    align-items: flex-end;
+}
+
+.map {
+    width: 100%;
+}
+
 // ------ Footer ------
 
 .footer {
