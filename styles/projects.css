@@ -88,6 +88,25 @@ body {
   line-height: 23px;
 }
 
+.projects-main-img-container {
+  display: flex;
+  width: 100%;
+  height: 880px;
+  align-items: center;
+}
+
+.projects-main-img {
+  width: 100%;
+}
+.projects-main-img__sub-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  mix-blend-mode: normal;
+  opacity: 0.8;
+  padding: 45px 0 45px 0;
+}
+
 .footer {
   display: flex;
   width: 100%;
