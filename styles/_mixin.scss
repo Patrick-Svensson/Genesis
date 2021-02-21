@@ -1,7 +1,18 @@
+// ------ Generic ------
+
+@mixin generic {
+    width: 80%;
+    height: auto;
+    font-family: font.$main-font;
+    margin: auto;
+}
+
 @mixin flex-container {
     display: flex;
     width: 100%;
 }
+
+// ------ Navigation ------
 
 @mixin nav-bar {
     @include flex-container;
@@ -28,6 +39,8 @@
         }   
     }
 }
+
+// ------ Footer ------
 
 @mixin footer-nav-bar {
     .footer-icons {
