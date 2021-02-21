@@ -1,0 +1,94 @@
+// ------ Authored Dependencies ------
+
+@use "font";
+@use "colours";
+@import "mixin";
+
+// ------ Generic ------
+
+body {
+    @include generic;
+}
+
+// ------ Navigation ------
+
+.nav-container {
+    @include flex-container;
+    margin-bottom: 30px;
+}
+
+.nav {
+    @include nav-bar;
+}
+
+// ------ Header ------
+
+.contact-header-container {
+    @include flex-container;
+    height: 300px;
+    justify-content: space-between;
+}
+
+.contact-header {
+    width: 38%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+
+    &__heading {
+        @include heading;
+        margin-bottom: 25px;
+    }
+
+    &__text{
+        @include text;
+    }
+}
+
+// ------ Form ------
+
+.form-container {
+    width: 40%;
+    height: auto;
+}
+
+.form {
+    list-style-type: none;
+
+    &__input {
+        outline: none;
+        width: 100%;
+        padding: 6px;
+        border: none;
+        border-bottom: 1px solid colours.$border-bottom-line;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 20px;
+        mix-blend-mode: normal;
+        opacity: 0.6;
+        margin-bottom: 20px;
+        height: 45px;
+    }
+}
+
+.button {
+    width: 125px;
+    height: 50px;
+    background-color: colours.$secondary;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #fff;
+    text-align: center;
+    border: none;
+    margin-top: 20px;
+    
+}
+
+// ------ Footer ------
+
+.footer {
+    @include nav-bar;
+    @include footer-nav-bar;
+    margin-top: 40px;
+}

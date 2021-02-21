@@ -40,6 +40,22 @@
     }
 }
 
+// ------ Header ------
+
+@mixin heading {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 55px;
+}
+
+@mixin text {
+    font-weight: 400;    
+    font-size: 16px;
+    line-height: 26px;
+    mix-blend-mode: normal;
+    opacity: 0.8;
+}
+
 // ------ Footer ------
 
 @mixin footer-nav-bar {
