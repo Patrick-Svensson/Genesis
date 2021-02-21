@@ -4,7 +4,7 @@
 @use "colours";
 @import "mixin";
 
-// ------ Navigation ------
+// ------ Partials ------
 
 @import "gallery";
 @import "awards";
@@ -15,11 +15,11 @@ body {
     @include generic;
 }
 
+// ------ Navigation ------
+
 .nav-container {
     @include flex-container;
 }
-
-// ------ Navigation ------
 
 .nav {
     @include nav-bar;

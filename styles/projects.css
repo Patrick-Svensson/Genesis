@@ -1,3 +1,64 @@
+body {
+  width: 80%;
+  height: auto;
+  font-family: "Mulish", sans-serif;
+  margin: auto;
+}
 
+.nav-container {
+  display: flex;
+  width: 100%;
+}
+
+.nav {
+  display: flex;
+  width: 100%;
+  height: auto;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav__logo {
+  width: 60%;
+}
+.nav__links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav__links a {
+  text-decoration: none;
+  color: #111;
+}
+.nav__links a[href*=projects] {
+  padding-right: 29px;
+}
+
+.footer {
+  display: flex;
+  width: 100%;
+  height: auto;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+}
+.footer__logo {
+  width: 60%;
+}
+.footer__links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__links a {
+  text-decoration: none;
+  color: #111;
+}
+.footer__links a[href*=projects] {
+  padding-right: 29px;
+}
+.footer .footer-icons {
+  padding-left: 24px;
+  padding-right: 24px;
+}
 
 /*# sourceMappingURL=projects.css.map */

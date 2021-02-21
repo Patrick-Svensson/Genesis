@@ -1,0 +1,29 @@
+// ------ Authored Dependencies ------
+
+@use "font";
+@use "colours";
+@import "mixin";
+
+// ------ Generic ------
+
+body {
+    @include generic;
+}
+
+// ------ Navigation ------
+
+.nav-container {
+    @include flex-container;
+}
+
+.nav {
+    @include nav-bar;
+}
+
+// ------ Footer ------
+
+.footer {
+    @include nav-bar;
+    @include footer-nav-bar;
+    margin-top: 40px;
+}
