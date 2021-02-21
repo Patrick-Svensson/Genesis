@@ -20,6 +20,30 @@ body {
     @include nav-bar;
 }
 
+// ------ Header ------
+
+.projects-header-container {
+    @include flex-container;
+    height: 400px;
+    justify-content: space-between;
+}
+
+.projects-header{
+    width: 60%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+// ------ Aside ------
+
+.projects-aside{
+    width: 30%;
+    height: auto;   
+}
+
+
 // ------ Footer ------
 
 .footer {
