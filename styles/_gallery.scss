@@ -1,7 +1,8 @@
 
 .gallery-container {
     @include flex-container;
-    height: 2500px;
+    height: 2100px;
+    align-items: flex-end;
 }
 
 .gallery {
@@ -9,12 +10,55 @@
     height: 1960px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(34, 1fr);
-    grid-gap: 20px;
+    grid-template-rows: repeat(32, 1fr);
+    grid-row-gap: 20px;
+    grid-column-gap: 23px;
 
-    &__img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
+    &__item-a {
+        grid-area: 1 / 1 / 8 / 2;
+    }
+
+    &__item-b {
+        grid-area: 1 / 2 / 7 / 3;
+    }
+
+    &__item-c {
+        grid-area: 1 / 3 / 11 / 4;
+    }
+
+    &__item-d {
+        grid-area: 8 / 1 / 16 / 2;
+    }
+
+    &__item-e {
+        grid-area: 7 / 2 / 14 / 3;
+    }
+
+    &__item-f {
+        grid-area: 11 / 3 / 18 / 4;
+    }
+
+    &__item-g {
+        grid-area: 16 / 1 / 26 / 2;
+    }
+
+    &__item-h {
+        grid-area: 14 / 2 / 26 / 3;
+    }
+
+    &__item-i {
+        grid-area: 18 / 3 / 30 / 4;
+    }
+
+    &__item-j {
+        grid-area: 24 / 1 / 34 / 2;
+    }
+
+    &__item-k {
+        grid-area: 23 / 2 / 34 / 3;
+    }
+
+    &__item-l {
+        grid-area: 27 / 3 / 34 / 4;
     }
 }
