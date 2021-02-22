@@ -186,12 +186,15 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+.nav__links--projects {
+  padding-right: 29px;
+}
 .nav__links a {
   text-decoration: none;
   color: #111;
 }
-.nav__links a[href*=projects] {
-  padding-right: 29px;
+.nav__links a:hover {
+  color: #5e5e5e;
 }
 
 .landing-container {
@@ -297,12 +300,15 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+.footer__links--projects {
+  padding-right: 29px;
+}
 .footer__links a {
   text-decoration: none;
   color: #111;
 }
-.footer__links a[href*=projects] {
-  padding-right: 29px;
+.footer__links a:hover {
+  color: #5e5e5e;
 }
 .footer .footer-icons {
   padding-left: 24px;
