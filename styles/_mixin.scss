@@ -29,14 +29,19 @@
         justify-content: space-between;
         align-items: center;
             
+        &--projects {
+            padding-right: 29px;
+        }   
+            
         & a {
             text-decoration: none;
             color: colours.$main;
         }
-            
-        & a[href*="projects"] {
-            padding-right: 29px;
-        }   
+
+        & a:hover {
+            color: lighten(colours.$main, 30%);
+        }
+
     }
 }
 

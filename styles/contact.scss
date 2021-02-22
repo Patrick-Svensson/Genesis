@@ -83,6 +83,9 @@ body {
     border: none;
     margin-top: 20px;
     
+    &:hover {
+        background-color: darken(colours.$secondary, 8%)
+    }
 }
 
 // ------ Map ------
